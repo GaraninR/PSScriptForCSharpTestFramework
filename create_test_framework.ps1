@@ -94,7 +94,7 @@ Else {
 }
 
 #Chromedriver for Google Chrome
-Invoke-WebRequest https://chromedriver.storage.googleapis.com/92.0.4515.43/$chromeArchiveName -OutFile 
+Invoke-WebRequest https://chromedriver.storage.googleapis.com/92.0.4515.43/$chromeArchiveName -OutFile $chromeArchiveName
 Expand-Archive -path $chromeArchiveName -destinationpath $DriversDir
 Remove-Item $chromeArchiveName
 
